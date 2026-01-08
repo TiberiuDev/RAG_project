@@ -1,0 +1,34 @@
+VPN Reset Procedure:
+To reset VPN access, open the VPN application.
+Click on the Reset button.
+Wait 2 minutes and reconnect.
+
+VPN Installation:
+Download the VPN client from the internal portal.
+Install and login using your employee credentials.
+
+VPN Troubleshooting Guide:
+If the VPN connection fails, first verify your internet connectivity by accessing an external website. 
+Ensure that no other VPN or proxy service is running simultaneously, as this may cause conflicts. 
+Restart the VPN client and try reconnecting. 
+If the issue persists, reboot your workstation and attempt the connection again.
+In case of authentication errors, confirm that your corporate password has not expired. 
+Password expiration can prevent successful VPN login. 
+If needed, reset your password using the internal identity management portal before retrying the VPN connection.
+
+VPN Security Requirements:
+All employees must comply with company security policies when using the VPN. 
+Personal devices are not permitted unless explicitly approved. 
+The operating system must be updated with the latest security patches, and antivirus software must be active and up to date. 
+Connections from public or unsecured Wi-Fi networks are discouraged unless absolutely necessary.
+
+Access Requests and Support:
+If VPN access is blocked or unavailable, submit a ticket to the IT Service Desk. 
+Include your employee ID, department, device type, and a brief description of the issue. 
+Requests are typically processed within one business day. 
+Emergency access requests outside working hours must be approved by a direct manager.
+
+Session Timeout Policy:
+VPN sessions automatically disconnect after 8 hours of inactivity. 
+Users are required to reconnect manually. 
+This policy is enforced to reduce security risks and free system resources.
