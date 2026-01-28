@@ -63,11 +63,50 @@ RAG_project/
 └── README.md
 ```
 
+
+## API Usage (Backend for Frontend Integration)
+
+You can run the backend as a web API for integration with a frontend or other clients.
+
+### Start the API server
+
+```bash
+uvicorn src.api:app --reload --host 0.0.0.0 --port 8000
+```
+
+The API will be available at: http://localhost:8000
+Interactive docs: http://localhost:8000/docs
+
+### /ask Endpoint
+
+- **POST** `/ask`
+- **Request body:** `{ "question": "your question here" }`
+- **Response:** `{ "answer": "..." }`
+
+#### Example using curl
+
+```bash
+curl -X POST "http://localhost:8000/ask" -H "Content-Type: application/json" -d "{\"question\": \"E5\"}"
+```
+
+#### Example using PowerShell
+
+```powershell
+(Invoke-RestMethod -Uri "http://localhost:8000/ask" -Method Post -ContentType "application/json" -Body '{"question": "E5"}').answer
+```
+
+### CORS
+
+CORS is enabled for all origins by default. For production, restrict `allow_origins` in `src/api.py` to your frontend's domain.
+
+---
+
 ## Notes
 
 - Edit `.env` to configure environment variables as needed.
 - All dependencies are managed via `requirements.txt`.
-- The main entry point is `src/main.py`.
+- The main entry point for CLI is `src/main.py`.
+- The main entry point for API is `src/api.py`.
 
 ## Troubleshooting
 
