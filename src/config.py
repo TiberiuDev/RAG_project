@@ -3,7 +3,7 @@ Settings dataclass for configuration management.
 Attributes:
   project_root (Path): The root directory of the project.
   data_dir (Path): Directory containing data files.
-  docs_path (Path): Path to the main documents file.
+  excel_path (Path): Path to the Excel/CSV file with error records.
   chunk_size_tokens (int): Number of tokens per chunk for token-based chunking.
   overlap_tokens (int): Number of overlapping tokens between chunks.
   top_k (int): Number of top results to retrieve.
@@ -29,7 +29,7 @@ class Settings:
     # Paths
     project_root: Path = Path(__file__).resolve().parents[1]
     data_dir: Path = project_root / "data"
-    docs_path: Path = data_dir / "docs.txt"
+    excel_path: Path = data_dir / "errors.csv"
 
     # Token-based chunking
     chunk_size_tokens: int = 70
